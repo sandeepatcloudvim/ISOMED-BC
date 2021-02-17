@@ -1,0 +1,38 @@
+{
+  "id": "ef6e0563-7e89-443a-b60f-6a71cabc19fa",
+  "name": "Isomed Customization CBR",
+  "publisher": "CBR SS",
+  "version": "16.0.0.13",
+  "brief": "",
+  "description": "",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "dependencies": [
+    {
+      "id": "63ca2fa4-4f03-4f2b-a480-172fef340d3f",
+      "publisher": "Microsoft",
+      "name": "System Application",
+      "version": "16.0.0.0"
+    },
+    {
+      "id": "437dbf0e-84ff-417a-965d-ed2bb9650972",
+      "publisher": "Microsoft",
+      "name": "Base Application",
+      "version": "16.0.0.0"
+    }
+  ],
+  "screenshots": [],
+  "platform": "16.0.0.0",
+  "idRanges": [
+    {
+      "from": 50000,
+      "to": 59999
+    }
+  ],
+  "contextSensitiveHelpUrl": "https://IsomedCBR16_Custom.com/help/",
+  "showMyCode": true,
+  "runtime": "5.0"
+}
