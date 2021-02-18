@@ -132,4 +132,10 @@ codeunit 50000 CBRTableSubscribers
     begin
         Cust.CBRSetNextCustNo(Contact."Company Name");  //CBR_SS_08052018
     end;
+
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Item Tracking Data Collection", 'OnAssistEditTrackingNoOnBeforeSetSources', '', true, true)]
+    procedure FilterBinContentValue(var TempTrackingSpecification: Record "Tracking Specification" temporary; var TempGlobalEntrySummary: Record "Entry Summary" temporary; var MaxQuantity: Decimal)
+    begin
+        TempGlobalEntrySummary.SetFilter("Bin Content", '>%1', 0);
+    end;
 }
